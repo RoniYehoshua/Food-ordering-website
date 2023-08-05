@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Site Metas -->
+	<title>Yamifood Restaurant - Responsive HTML5 Template</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Pickadate CSS -->
+	<link rel="stylesheet" href="css/classic.css">
+	<link rel="stylesheet" href="css/classic.date.css">
+	<link rel="stylesheet" href="css/classic.time.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- my style -->
+	<link rel="stylesheet" href="css/myStyle.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="registration">
+<!-- Start header -->
+<header class=" top-navbar">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container calibri">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" alt="" />
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food"
+				aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbars-rs-food">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">דף הבית</a></li>
+					<li class="nav-item"><a class="nav-link" href="shopping.html"><i
+								class="fas fa-shopping-cart"></i></a></li>
+					<li class="nav-item"><a class="nav-link" href="fevoriteRestaurants.html"><i class="fas fa-heart"></i></a></li>
+					<li class="nav-item">
+						<div class="d-flex flex-row-reverse align-items-center text-center">
+							<div id="gread-user" class="connected align-items-center flex-row-reverse d-none">
+								<img src="images/avt-img.jpg" alt="">
+								<p id="pUser"></p>
+							</div>
+							<a href="registration.html" class="connected nav-link d-none">התחברות/הרשמה</a>
+							<div id="user-pop">
+								<div class="d-flex justify-content-around full-width position-relative">
+									<img src="images/avt-img.jpg" alt="" class="">
+					
+									<div id="connect-user">
+										<p id="user-name">פלוני</p>
+										<p id="user-mail">פלוני</p>
+									</div>
+								</div>
+								<div id="log-out-user" class="btn">
+									<p class="p-0 m-0">התנתקות</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+				
+				
+			</div>
+
+		</div>
+	</nav>
+</header>
+<!-- End header -->
+
+		<div class="container sign-up-mode calibri" id="reg-container">
+			<div class="forms-container">
+				<div class="signin-signup">
+					<form onsubmit="(formValid()?creatUser():false)" class="sign-in-form" id="sign-up">
+						<h2 class="title">הרשמה</h2>
+						<div class="input-field">
+							<i class="fas fa-user"></i>
+							<input type="text" placeholder="שם מלא" id="FullName"/>
+						</div>
+						<div class="input-field">
+							<i class="fas fa-genderless"></i>
+							<div class="gender d-flex justify-content-around align-content-center">
+								<input type="radio" id="male" name="gender" value="זכר">
+								<label for="male">זכר</label><br>
+								<input type="radio" id="female" name="gender" value="נקבה">
+								<label for="female">נקבה</label><br>
+								<input type="radio" id="other" name="gender" value="אחר">
+								<label for="other">אחר</label>
+							</div>
+						</div>
+						<div class="input-field">
+							<i class="fas fa-calendar"></i>
+							<input type="date" placeholder="תאריך לידה" id="dateOfBirth"/>
+						</div>
+						<div class="input-field">
+							<i class="fas fa-envelope"></i>
+							<input type="email" placeholder="Email" id="newUserEmail"/>
+						</div>
+						<div class="input-field">
+							<i class="fas fa-phone"></i>
+							<input type="tel" placeholder="Phone Number" maxlength="10" id="phoneNum"/>
+						</div>
+						<div class="input-field">
+							<i class="fas fa-lock"></i>
+							<input type="password" placeholder="סיסמה" id="NewPassword"/>
+						</div>
+	
+	
+	
+						<input type="submit" class="btn" value="הירשם" />
+	
+					</form>
+					<form onsubmit="searchUser()" action="" class="sign-up-form" id="sign-in">
+						<h2 class="title">התחבר</h2>
+						<div class="input-field">
+							<i class="fas fa-envelope"></i>
+							<input type="text" placeholder="Email" id="sign-email"/>
+						</div>
+						<div class="input-field">
+							<i class="fas fa-lock"></i>
+							<input type="password" placeholder="סיסמה" id="sign-password" />
+						</div>
+						<input type="submit" value="התחבר" class="btn solid" />
+	
+	
+					</form>
+				</div>
+			</div>
+	
+			<div class="panels-container">
+				<div class="panel left-panel">
+					<div class="content">
+						<h3>משתמש קיים?</h3>
+						<p>
+							התחבר לחשבונך בקלות
+						</p>
+						<button class="btn transparent" id="sign-in-btn">
+							התחבר
+						</button>
+					</div>
+					<img src="img/log.svg" class="image" alt="" />
+				</div>
+				<div class="panel right-panel">
+					<div class="content">
+	
+						<h3>חדש אצלנו?</h3>
+						<p>
+							!הירשם לאתר ותוכל להנות מהטבות ומבצעים שווים במיוחד
+						</p>
+						<button class="btn transparent" id="sign-up-btn">
+							הירשם
+						</button>
+					</div>
+					<img src="img/register.svg" class="image" alt="" />
+				</div>
+			</div>
+		</div>
+
+
+
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/homeScript.js"></script>
+
+	<!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script>
+	<script src="js/legacy.js"></script>
+	<script src="js/form-validator.min.js"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>

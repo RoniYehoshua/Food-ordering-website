@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Site Metas -->
+	<title>Yamifood Restaurant - Responsive HTML5 Template</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Pickadate CSS -->
+	<link rel="stylesheet" href="css/classic.css">
+	<link rel="stylesheet" href="css/classic.date.css">
+	<link rel="stylesheet" href="css/classic.time.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- my style -->
+	<link rel="stylesheet" href="css/myStyle.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="shoppingBody">
+	<!-- Start header -->
+	<header class=" top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food"
+					aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">דף הבית</a></li>
+						<li class="nav-item"><a class="nav-link" href="shopping.html"><i
+									class="fas fa-shopping-cart"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="fevoriteRestaurants.html"><i class="fas fa-heart"></i></a></li>
+						<li class="nav-item">
+							<div class="d-flex flex-row-reverse align-items-center text-center">
+								<div id="gread-user" class="connected align-items-center flex-row-reverse d-none">
+									<img src="images/avt-img.jpg" alt="">
+									<p id="pUser"></p>
+								</div>
+								<a href="registration.html" class="connected nav-link d-none">התחברות/הרשמה</a>
+								<div id="user-pop">
+									<div class="d-flex justify-content-around full-width position-relative">
+										<img src="images/avt-img.jpg" alt="" class="">
+						
+										<div id="connect-user">
+											<p id="user-name">פלוני</p>
+											<p id="user-mail">פלוני</p>
+										</div>
+									</div>
+									<div id="log-out-user" class="btn">
+										<p class="p-0 m-0">התנתקות</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+					
+					
+				</div>
+
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class='checkout-container'>
+		<div class=' window '>
+			<div class='order-info head-title-all'>
+				<h2>סיכום הזמנה</h2>
+				<div class='order-info-content' id="summaryOrder">
+					<div class='line'></div>
+
+					<i></i>
+				</div>
+				<div class='total'>
+					<div class="row text-center d-flex justify-content-between flex-r">
+						<div class="col">
+							<div class='thin dense'id="middel-cost">0</div>
+							<br>
+							<div class='thin dense'id="delivery-cost">₪0</div>
+							<br>
+							<div class='thin dense' id="totalCost">₪0</div>
+						</div>
+						<div class="col">
+							<div class='thin dense'>סכום ביניים</div>
+							<br>
+							<div class='thin dense'>משלוח</div>
+							<br>
+							<div class='thin dense'>סה"כ לתשלום</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='credit-info'>
+				<div class='credit-info-content'>
+					<table class='half-input-table'>
+						<tr>
+							<td>Please select your card: </td>
+							<td>
+								<div class='dropdown' id='card-dropdown'>
+									<div class='dropdown-btn' id='current-card'>Visa</div>
+									<div class='dropdown-select'>
+										<ul>
+											<li>Master Card</li>
+											<li>American Express</li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80'
+						class='credit-card-image' id='credit-card-image'></img>
+					Card Number
+					<input class='input-field'></input>
+					Card Holder
+					<input class='input-field'></input>
+					<table class='half-input-table'>
+						<tr>
+							<td> Expires
+								<input class='input-field'></input>
+							</td>
+							<td>CVC
+								<input class='input-field'></input>
+							</td>
+						</tr>
+					</table>
+					<button class='pay-btn'>Checkout</button>
+	
+				</div>
+	
+			</div>
+		</div>
+	</div>
+
+	<!-- End checkout section -->
+
+
+
+
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dishes.js"></script>
+	<script src="js/homeScript.js"></script>
+
+	<!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script>
+	<script src="js/legacy.js"></script>
+	<script src="js/form-validator.min.js"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
